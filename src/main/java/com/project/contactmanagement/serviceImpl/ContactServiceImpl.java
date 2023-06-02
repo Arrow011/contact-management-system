@@ -1,10 +1,11 @@
-package com.project.contactmanagement.service;
+package com.project.contactmanagement.serviceImpl;
 
 import com.project.contactmanagement.entity.Contact;
 import com.project.contactmanagement.exception.ResourceNotFoundException;
 import com.project.contactmanagement.model.ContactDetailsRequest;
 import com.project.contactmanagement.model.ContactDetailsResponse;
 import com.project.contactmanagement.repository.ContactRepository;
+import com.project.contactmanagement.service.ContactService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

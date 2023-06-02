@@ -1,25 +1,17 @@
-package com.project.contactmanagement.entity;
+package com.project.contactmanagement.model;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "UserInfo")
+@NoArgsConstructor
 @Builder
-public class UserInfo {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class UserRequest {
     private String name;
     private String email;
     private String password;
     private String roles;
-
 }

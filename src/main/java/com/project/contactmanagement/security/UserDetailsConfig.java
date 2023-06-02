@@ -10,10 +10,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class UserDetailsConfig implements UserDetails {
-    private String name;
-    private String password;
-    private List<GrantedAuthority> authorityList;
-    private static final long serialVersionUID = 1L;
+    private final String name;
+    private final String password;
+    private final List<GrantedAuthority> authorityList;
 
     public UserDetailsConfig(UserInfo userInfo){
         name = userInfo.getName();

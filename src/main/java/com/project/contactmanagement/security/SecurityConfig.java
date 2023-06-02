@@ -20,13 +20,16 @@ public class SecurityConfig {
 
     public static final String[] SECURED_ADMIN = {
             "/contact/v1/create",
-            "/contact/v1/delete/**"
+            "/contact/v1/delete/**",
+            "/contact/v1/update/**",
+            "/user/**"
     };
 
     public static final String[] SECURED_USERS = {
             "/contact/v1/id/**",
             "/contact/v1/firstName/**",
-            "/contact/v1/lastName/**"
+            "/contact/v1/lastName/**",
+            "/contact/v1/email/**"
     };
     public static final String[] UNSECURED = {
             "/contact/v1/all",
