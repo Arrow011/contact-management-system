@@ -1,4 +1,4 @@
-# contact-management-system
+# Contact-Management-System
 REST API's for Contact Management System using Spring Boot.
 
 # Default Users
